@@ -3,31 +3,34 @@ identity:
   author: "jingwensong"
   label:
     en_US: "trip_ebs"
-    zh_Hans: "trip_ebs"
-    pt_BR: "trip_ebs"
-    ja_JP: "trip_ebs"
+    zh_Hans: "Trip账务组EBS导入模板"
 description:
   human:
     en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    zh_Hans: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    pt_BR: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    ja_JP: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-  llm: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    zh_Hans: "生成Trip账务组EBS导入模板的表格插件。"
+  llm: "A table plugin that allows you to generate import journal templates for Trip Oracle EBS."
 parameters:
-  - name: query
+  - name: json_str
     type: string
     required: true
     label:
-      en_US: Query string
-      zh_Hans: 查询语句
-      pt_BR: Query string
-      ja_JP: クエリ文字列
+      en_US: JSON String
+      zh_Hans: JSON字符串
     human_description:
-      en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-      zh_Hans: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-      pt_BR: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-      ja_JP: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    llm_description: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+      en_US: "The JSON string to convert."
+      zh_Hans: "要导入的JSON字符串。"
+    llm_description: "The JSON string to convert."
+    form: llm
+  - name: filename
+    type: string
+    required: true
+    label:
+      en_US: Excel filename
+      zh_Hans: 表名
+    human_description:
+      en_US: "The filename for the generated Excel file."
+      zh_Hans: "生成的表文件名。"
+    llm_description: "The filename that will be used for the generated Excel file."
     form: llm
 extra:
   python:
