@@ -1,0 +1,34 @@
+identity:
+  name: "trip_ebs"
+  author: "jingwensong"
+  label:
+    en_US: "trip_ebs"
+    zh_Hans: "trip_ebs"
+    pt_BR: "trip_ebs"
+    ja_JP: "trip_ebs"
+description:
+  human:
+    en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    zh_Hans: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    pt_BR: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    ja_JP: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+  llm: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+      ja_JP: クエリ文字列
+    human_description:
+      en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+      zh_Hans: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+      pt_BR: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+      ja_JP: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    llm_description: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    form: llm
+extra:
+  python:
+    source: tools/trip_ebs.py
