@@ -65,13 +65,17 @@ class TripEbsTool(Tool):
             
             df_ebs_template['类别'] = '记账'
             
+            df_ebs_template['原币借方金额'] = pd.to_numeric(df_ebs_template['原币借方金额'], errors='coerce').round(2)
+
+            df_ebs_template['原币贷方金额'] = pd.to_numeric(df_ebs_template['原币贷方金额'], errors='coerce').round(2)
+            
         except Exception as e:
             raise Exception(f"Error generating EBS templates: {str(e)}")
         
         # convert df to excel bytes
         excel_buffer = BytesIO()
         try:
-            df.to_excel(excel_buffer, index=False)
+            df_ebs_template.to_excel(excel_buffer, index=False)
             excel_buffer.seek(0)
         except Exception as e:
             raise Exception(f"Error converting DataFrame to Excel: {str(e)}")
