@@ -3,14 +3,10 @@ identity:
   name: "trip_ebs"
   label:
     en_US: "trip_ebs"
-    zh_Hans: "trip_ebs"
-    pt_BR: "trip_ebs"
-    ja_JP: "trip_ebs"
+    zh_Hans: "Trip账务组EBS"
   description:
     en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    zh_Hans: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    pt_BR: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
-    ja_JP: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
+    zh_Hans: "生成Trip账务组EBS导入模板的表格插件"
   icon: "icon.svg"
 
 #########################################################################################
