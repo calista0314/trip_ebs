@@ -89,7 +89,7 @@ class TripEbsTool(Tool):
         # create a blob with the excel bytes
         try:
             excel_bytes = excel_buffer.getvalue()
-            filename = tool_parameters.get("filename", "Untitled")
+            filename = tool_parameters.get('filename', 'Converted Data')
             filename = f"{filename.replace(' ', '_')}.xlsx"
 
             yield self.create_text_message(f"Excel file '{filename}' generated successfully")
