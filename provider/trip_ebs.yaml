@@ -2,7 +2,7 @@ identity:
   author: "jingwensong"
   name: "trip_ebs"
   label:
-    en_US: "trip_accounting"
+    en_US: "trip_ebs"
     zh_Hans: "Trip账务组EBS"
   description:
     en_US: "A table plugin that allows you to generate import templates for Trip Oracle EBS."
